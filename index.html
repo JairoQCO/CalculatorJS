@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calc" aria-label="Calculadora">
+    <section class="top">
+      <div class="brand">
+        <span>CalculadoraJS</span>
+      </div>
+
+      <div class="screen" role="group" aria-label="Pantalla">
+        <div id="history" class="history" aria-live="polite"></div>
+        <div id="display" class="display" aria-live="polite">0</div>
+      </div>
+    </section>
+
+    <section class="keys" aria-label="Teclas">
+      <button class="danger" data-action="ac" aria-label="Borrar todo">AC</button>
+      <button class="fn" data-action="del" aria-label="Borrar último">DEL</button>
+      <button class="fn" data-action="sign" aria-label="Cambiar signo">±</button>
+      <button class="op" data-action="op" data-value="/" aria-label="Dividir">÷</button>
+
+      <button class="k" data-action="digit" data-value="7">7</button>
+      <button class="k" data-action="digit" data-value="8">8</button>
+      <button class="k" data-action="digit" data-value="9">9</button>
+      <button class="op" data-action="op" data-value="*" aria-label="Multiplicar">×</button>
+
+      <button class="k" data-action="digit" data-value="4">4</button>
+      <button class="k" data-action="digit" data-value="5">5</button>
+      <button class="k" data-action="digit" data-value="6">6</button>
+      <button class="op" data-action="op" data-value="-" aria-label="Restar">−</button>
+
+      <button class="k" data-action="digit" data-value="1">1</button>
+      <button class="k" data-action="digit" data-value="2">2</button>
+      <button class="k" data-action="digit" data-value="3">3</button>
+      <button class="op" data-action="op" data-value="+" aria-label="Sumar">+</button>
+
+      <button class="fn" data-action="percent" aria-label="Porcentaje">%</button>
+      <button class="k zero" data-action="digit" data-value="0">0</button>
+      <button class="k" data-action="dot" aria-label="Punto decimal">.</button>
+      <button class="eq" data-action="equals" aria-label="Igual">=</button>
+    </section>
+
+    <div class="hint">
+      Teclado: <span class="pill">0–9</span> <span class="pill">+ − × ÷</span>
+      <span class="pill">Enter</span> <span class="pill">Backspace</span> <span class="pill">Esc</span>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
